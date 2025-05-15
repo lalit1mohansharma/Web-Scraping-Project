@@ -35,15 +35,15 @@ def main():
     # print(sh)
 
     # Request moment site
-    url = 'https://www.shopmoment.com/cameras'
+    # url = 'https://www.shopmoment.com/cameras'
 
-    response = requests.get(url)
+    # response = requests.get(url)
 
-    html = response.content
-    soup = BeautifulSoup(html, 'html.parser')
+    # html = response.content
+    # soup = BeautifulSoup(html, 'html.parser')
 
-    headers = ["Brands", "Name", "Special Message", "Current Price", "Retail Price", "No. of Reviews", "Status", "Link"]
-    moment_df = pd.DataFrame(columns=headers)
+    # headers = ["Brands", "Name", "Special Message", "Current Price", "Retail Price", "No. of Reviews", "Status", "Link"]
+    # moment_df = pd.DataFrame(columns=headers)
 
     try:
         browser = webdriver.Chrome(ChromeDriverManager().install() ,options=chrome_options)
