@@ -28,7 +28,7 @@ def main():
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("window-size=1024,768")
     chrome_options.add_argument("--no-sandbox")
-
+    
     # Create credentials to access google spreadsheet
     # gc = gspread.service_account(filename='GOOGLESHEET JSON FILE PUT HERE')
     # sh = gc.open('Cameras - Daily Price Information')
@@ -36,7 +36,6 @@ def main():
 
     # Request moment site
     # url = 'https://www.shopmoment.com/cameras'
-
     # response = requests.get(url)
 
     # html = response.content
