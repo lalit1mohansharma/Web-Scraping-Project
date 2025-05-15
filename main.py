@@ -22,7 +22,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def main():
-
     
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--headless")
