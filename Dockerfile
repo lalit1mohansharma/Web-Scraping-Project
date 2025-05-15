@@ -32,4 +32,4 @@ COPY . .
 # to be equal to the cores available.
 EXPOSE 8080
 
-CMD CMD exec gunicorn --bind :8080T --workers 1 --threads 8 --timeout 0 main:app
+CMD exec gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 main:app
